@@ -1,4 +1,3 @@
-import './App.css';
 import NavBar from './Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {

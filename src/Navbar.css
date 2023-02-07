@@ -1,7 +1,8 @@
 :root {
     --dark-color: #19283f;
     --green-color: #33d1cc;
-
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
 }
 body {
     margin: 0 !important;
@@ -9,7 +10,7 @@ body {
     font-family: "Roboto", sans-serif;
     height: 10000px;
 }
-
+/*Start Navbar*/
 .navbar {
     background-color: var(--dark-color);
 }
@@ -28,3 +29,34 @@ body {
  .navbar .navbar-toggler:focus{
     box-shadow: none;
  }
+ .navbar-collapse .login-btn{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+    border: none;
+ }
+ .navbar-collapse .login-btn:hover{
+    background-color: var(--green-color);
+    color: white;
+    padding: 0.5rem 1rem;
+ }
+/*End Navbar*/
+
+/*Start Land Section */
+.landing{
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 75px);
+}
+.landing .main-btn{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+    border: none;
+
+}
+.landing .main-btn:hover{
+    background-color: var(--green-color);
+    color: white;
+    padding: 0.5rem 1rem;
+ }
+/*End Land Section */

@@ -60,3 +60,64 @@ body {
     padding: 0.5rem 1rem;
  }
 /*End Land Section */
+
+/*Start Features Section*/
+.features .main-title::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icon-holder{
+    height: 160px;
+}
+.features .icon-holder .icon{
+    left: 50%;
+    font-size: 7rem;
+    transform: translateX(-50%);
+    color: var(--green-color);
+}
+.features h4 {
+    color: var(--yellow-color);
+}
+.card-content .typography-icon .icon {
+    font-size: 6rem;
+    color: var(--green-color);
+}
+.card-content .sh-title{
+    color: #ffc400;
+}
+
+/*End Features Section*/
+
+/*Start Work Section*/
+
+
+.work-section .main-title::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.work-section .card-media {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*End Work Section*/

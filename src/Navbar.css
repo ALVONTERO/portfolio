@@ -45,7 +45,7 @@ body {
 /*Start Land Section */
 .landing{
     background-color: var(--dark-color);
-    min-height: calc(100vh - 75px);
+    min-height: calc(100vh );
 }
 .landing .main-btn{
     background-color: var(--red-color);
@@ -121,3 +121,20 @@ body {
 }
 
 /*End Work Section*/
+
+
+.mui-scat-icon{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.stuff-section .main-title::after{
+    content: "";
+    width: 15%;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

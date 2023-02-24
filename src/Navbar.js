@@ -1,5 +1,5 @@
 import React from "react";
-import { Nav, Navbar, Container, Button, Row } from "react-bootstrap";
+import { Nav, Navbar, Container, Button, Row, Col } from "react-bootstrap";
 import "./Navbar.css";
 import brandImage from "./assets/images/vistaz.jpg";
 import SearchIcon from "@mui/icons-material/Search";
@@ -14,7 +14,7 @@ import js from "./assets/images/js.png";
 import bootstrap from "./assets/images/bootstrap.png";
 import react from "./assets/images/react.jpg";
 import mui from "./assets/images/mui.jfif";
-
+import HelloAvatar from "./assets/images/hello-avatar.png";
 function NavBar() {
   return (
     <>
@@ -173,7 +173,7 @@ function NavBar() {
             <h2>We Make This</h2>
             <p className="text-black-50 text-uppercase">Prepare to be Amazed</p>
           </div>
-          <Row className="justify-content-around align-items-center">
+          <Row className="justify-content-around align-items-center mb-5">
             <Card
               className="mt-3 mb-3"
               sx={{ minHeight: 432.52, border: "none", maxWidth: 345 }}
@@ -339,6 +339,46 @@ function NavBar() {
           </Row>
         </Container>
       </div>
+      <div className="stuff-section d-flex align-items-center justify-content-center position-relative">
+        <div className="main-title mt-5 mb-5">
+          <ScatterPlotIcon
+            className="mui-scat-icon"
+            sx={{ fontSize: "5rem", color: "#ffc400" }}
+          />
+          <h2>Some Stuff About Us</h2>
+          <p className="text-black-50 text-center text-uppercase">
+            The Great Team
+          </p>
+        </div>
+      </div>
+      <Container>
+        <p className="m-auto text-center mb-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <Row className="align-items-center">
+          <Col xs={12} className="col-lg-4 mt-5 text-center text-md-start">
+            <h3>Retina Design</h3>
+            <p className="text-black-50 fs-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p className="text-black-50 fs-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </Col>
+          <Col className="d-xs-none col-lg-6 mb-4 mt-5 m-auto">
+            <img alt="" className="img-fluid" src={HelloAvatar} />
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 }

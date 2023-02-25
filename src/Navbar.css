@@ -8,7 +8,7 @@ body {
     margin: 0 !important;
     padding: 0 !important;
     font-family: "Roboto", sans-serif;
-    height: 10000px;
+    
 }
 /*Start Navbar*/
 .navbar {
@@ -125,16 +125,30 @@ body {
 
 .mui-scat-icon{
     position: absolute;
-    top: 0%;
+    top: -50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .stuff-section .main-title::after{
     content: "";
-    width: 15%;
+    width: 30%;
     height: 2px;
     background-color: var(--green-color);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.team{
+    margin-top: -6px;
+    background-color: #29ebe52a;
+}
+
+.subs-section .inp{
+    border: none;
+    border-bottom: 1px solid #29ebe52a;
+}
+.subs-section .inp:focus{
+    outline: none;
+    border-bottom: 1px solid #29ebe52a;
 }
